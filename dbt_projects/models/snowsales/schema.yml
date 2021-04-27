@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: SNOWFLAKE_SAMPLE_DATA
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF001
+    tables:
+      - name: customer
+        description: ' A customer table from TPCH with 1500 rows'
