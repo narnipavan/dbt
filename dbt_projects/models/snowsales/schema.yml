@@ -7,3 +7,14 @@ sources:
     tables:
       - name: customer
         description: ' A customer table from TPCH with 1500 rows'
+        columns:
+          - name: C_CUSTKEY
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: C_MKTSEGMENT
+            description: "Customer Marketsegment"
+            tests:
+                - accepted_values:
+                    values: ['AUTOMOBILE', 'BUILDING','FURNITURE', 'HOUSEHOLD', 'MACHINERY']
