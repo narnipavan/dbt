@@ -18,3 +18,7 @@ sources:
             tests:
                 - accepted_values:
                     values: ['AUTOMOBILE', 'BUILDING','FURNITURE', 'HOUSEHOLD', 'MACHINERY']
+          - name: C_ACCTBAL
+            description: "Customer account balance"
+            tests: 
+                - customer_accbal
